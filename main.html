@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shaik Shahid - Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f7f9fc;
+      color: #333;
+      padding: 20px;
+    }
 
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .header img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      margin-right: 30px;
+    }
+
+    .info h2 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .info p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    h3.section-title {
+      font-size: 22px;
+      border-left: 5px solid #1a73e8;
+      padding-left: 10px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .skills-about-wrapper {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .skills-wrapper,
+    .sha {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .skill-item {
+      margin: 18px 0;
+    }
+
+    .skill-title {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .skill-title i, .skill-title img {
+      margin-right: 8px;
+    }
+
+    .progress-bar {
+      background: #dfe6ee;
+      height: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      background: #1a73e8;
+      border-radius: 5px;
+    }
+
+    .percent {
+      float: right;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+
+    .sho {
+    position:relative;
+    top:-357px;
+      font-size: 24px;
+      border-left: 5px solid #1a73e8;
+      padding-left: 10px;
+      margin-bottom: -284pxpx;
+    }
+
+    .sha p {
+      position:relative;
+      top:-373px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header img {
+        margin-bottom: 20px;
+      }
+
+      .skills-about-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <img src="https://i.postimg.cc/DwfkHcyy/Whats-App-Image-2025-06-05-at-22-24-18-fe28cf34.jpg" alt="Profile Photo">
+      <div class="info">
+        <h3 class="section-title">Name</h3>
+        <h2>Shaik Shahid</h2>
+
+        <h3 class="section-title">Profile</h3>
+        <p>Software Developer</p>
+
+        <h3 class="section-title">Email</h3>
+        <p>shaikshahidmail@gmail.com</p>
+      </div>
+    </div>
+
+    <!-- Skills + About Me Side-by-Side Section -->
+    <h3 class="section-title">Skills & About Me</h3>
+    <div class="skills-about-wrapper">
+
+      <!-- Skills Section -->
+      <div class="skills-wrapper">
+        <div class="skill-item">
+          <div class="skill-title"><i class="fab fa-react"></i> React <span class="percent">95%</span><i class="fab fa-css3-alt"></i> CSS <span class="percent">95%</span><i class="fab fa-js-square"></i> JavaScript <span class="percent">95%</span></div>
+          <div class="progress-bar"><div class="progress" style="width:95%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-title"><i class="fab fa-node"></i> Node.js <span class="percent">90%</span></div>
+          <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+        </div>
+
+
+
+        <div class="skill-item">
+          <div class="skill-title"><i class="fas fa-code"></i> C/C++ <span class="percent">99%</span><i class="fab fa-python"></i> Python <span class="percent">99%</span><i class="fas fa-terminal"></i> Batch <span class="percent">99%</span></div>
+          <div class="progress-bar"><div class="progress" style="width:99%"></div></div>
+        </div>
+
+
+        <div class="skill-item">
+          <div class="skill-title"><i class="fab fa-aws"></i> AWS <span class="percent">93%</span></div>
+          <div class="progress-bar"><div class="progress" style="width:93%"></div></div>
+        </div>
+
+        <div class="skill-title">
+          <img src="https://img.icons8.com/color/24/000000/hadoop.png"/> Hadoop <span class="percent">93%</span>
+        </div>
+        <div class="progress-bar"><div class="progress" style="width:93%"></div></div>
+      </div>
+
+      <!-- About Me Section -->
+      <div class="sha">
+        <h3 class="sho">About me</h3>
+        <p>
+          I am a self-starter with a passion to adapt and evangelise new technologies. I have a passion for software development with a diverse skillset ranging from the MERN stack to a stronghold on data structures and algorithms. I like to tackle complex challenges head-on to deliver technically sound solutions with optimum efficiency.
+        </p>
+        <p>
+          I believe that magic is possible with a blend of imagination, hard work and passion. Most of all, I believe in determination and honest efforts to enhance my skills in order to contribute to the growth of society.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
